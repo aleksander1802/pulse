@@ -1,0 +1,96 @@
+.advantage {
+    min-height: 470px;
+    padding: 70px 0 78px 0;
+    background-color: #f6f6f6;;
+    &__header {
+        font-size: 30px;        
+        font-weight: 700;
+        color: #0d0d0d;
+        text-align: center;
+    }
+    &__block {
+        width: 100%;
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        
+    }
+    &__item {
+        
+        max-width: 242px;    
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+    }
+    &__title {
+        margin-top: 38px;
+        display: flex;;
+        justify-content: center;
+        font-size: 18px;        
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+    &__descr {
+        margin-top: 26px;        
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        
+        span {
+            text-decoration: underline;
+            color: #ff0000;;         
+        }        
+    }   
+}
+
+@media (max-width: 991px) {
+    .advantage {       
+        &__block {            
+            display: flex;
+            justify-content: space-around;
+            align-content: center;            
+        }
+    }   
+}
+
+@media (max-width: 767px) {
+    .advantage {       
+        &__block {            
+            display: flex;
+            flex-direction: column; 
+            align-items: center;          
+        }
+        &__item {
+        
+            max-width: 400px;    
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+        }
+    }   
+}
+
+@media (max-width: 575px) {
+    .advantage {   
+       
+        &__item {
+        
+            max-width: 80%;    
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+        }
+    }   
+}
