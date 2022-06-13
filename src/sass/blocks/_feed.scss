@@ -1,8 +1,7 @@
 .feed {
     min-height: 1050px;
-    padding-bottom: 71px;    
-    
-        &__item {
+    padding-bottom: 71px;
+    &__item {
         display: flex;
         align-items: start;
         margin-top: 70px;               
@@ -20,11 +19,21 @@
         font-weight: 500;        
     }
     &__descr {
-        font-size: 16px;
-        
+        font-size: 16px;        
         font-weight: 300;
-        margin-top: 10px;
-        
+        margin-top: 10px;        
     }
     
+}
+
+@media (max-width: 992px) {
+    .feed {    
+        &__item {            
+            justify-content: center;
+            flex-wrap: wrap;            
+        }
+        &__text {
+            margin-top: 50px;
+        }
+    }
 }
